@@ -42,14 +42,8 @@ superscriptBtn.addEventListener('click', function() {
 
 fontsizeSelect.addEventListener('change', function() {
     const size = this.value;
-    document.execCommand('fontSize', false, '7');
-    const selection = window.getSelection();
-    if (selection.focusNode.nodeName === '#text') {
-      const span = document.createElement('span');
-      span.style.fontSize = size;
-      const range = selection.getRangeAt(0);
-      range.surroundContents(span);
-    }
+    document.execCommand('fontsize', false, size);
+
     console.log(`Font size changed to ${size}`);
 });
   

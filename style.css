@@ -19,6 +19,7 @@ body {
   top: 0;
   left: 0;
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   gap: 10px;
   z-index: 10;
@@ -61,11 +62,11 @@ select {
   border: 1px solid #ccc;
   padding: 5px;
   background: white;
-  width: max(70vw, 70%);
-  aspect-ratio: 2/3;
   outline: none;
-  padding: 100px;
   font-size: 14px;
+  width: 21cm;
+  height: 29.7cm;
+  padding: 2cm;
 }
 
 .editContainer {
