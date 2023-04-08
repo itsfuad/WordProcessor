@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer type="module" src="./app.js"></script>
+    <link rel="icon" href="icon-small.png" type="image/png">
+    <title>Poketab Writter</title>
+</head>
+<body>
+	<div id="toolbar">
+        <label for="open" class="btnLabel">Open</label>
+        <input type="file" accept=".ptb" id="open" class="hiddenInput">
+		<button id="bold">B</button>
+		<button id="italic">I</button>
+		<button id="underline">U</button>
+        <button id="strike">S</button>
+        <button id="subscript">x<sub>2</sub></button>
+        <button id="superscript">x<sup>2</sup></button>
+		<select id="fontsize">
+			<option value="10px">10</option>
+			<option value="12px">12</option>
+            <option value="14px">14</option>
+			<option value="16px">16</option>
+            <option value="18px">18</option>
+			<option value="20px">20</option>
+            <option value="22px">22</option>
+            <option value="24px">24</option>
+            <option value="26px">26</option>
+            <option value="28px">28</option>
+            <option value="30px">30</option>
+            <option value="32px">32</option>
+            <option value="34px">34</option>
+            <option value="36px">36</option>
+            <option value="38px">38</option>
+            <option value="40px">40</option>
+            <option value="42px">42</option>
+            <option value="44px">44</option>
+            <option value="46px">46</option>
+            <option value="48px">48</option>
+            <option value="50px">50</option>
+            <option value="52px">52</option>
+            <option value="54px">54</option>
+            <option value="56px">56</option>
+            <option value="58px">58</option>
+            <option value="60px">60</option>
+            <option value="62px">62</option>
+            <option value="64px">64</option>
+		</select>
+		<select id="fontfamily">
+			<option value="Arial">Arial</option>
+			<option value="Verdana">Verdana</option>
+			<option value="Times New Roman">Times New Roman</option>
+			<option value="Georgia">Georgia</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Impact">Impact</option>
+            <option value="Comic Sans MS">Comic Sans MS</option>
+            <option value="Century Gothic">Century Gothic</option>
+            <option value="Lucida Console">Lucida Console</option>
+            <option value="Tahoma">Tahoma</option>
+            <option value="Trebuchet MS">Trebuchet MS</option>
+            <option value="Palatino Linotype">Palatino Linotype</option>
+            <option value="Bookman Old Style">Bookman Old Style</option>
+            <option value="Garamond">Garamond</option>
+            <option value="Arial Black">Arial Black</option>
+            <option value="MS Sans Serif">MS Sans Serif</option>
+            <option value="MS Serif">MS Serif</option>
+		</select>
+        <button id="save">Save</button>
+        <button id="download">Download</button>
+        <button id="close">Close</button>
+	</div>
+    <div class="editContainer">
+        <div id="editor" contenteditable="true"></div>
+    </div>
+</body>
+</html>
